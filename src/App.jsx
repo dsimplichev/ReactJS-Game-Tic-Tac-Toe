@@ -3,12 +3,15 @@ import { useState } from "react"
 import Header from "./components/Header/Header"
 import Player from "./components/Player/Player"
 import GameBoard from "./components/GameBoard/GameBoard"
+import Log from './components/Log/Log'
 
 function App() {
+  const [gameTurns, setGameTurns] = useState([])
   const [activePlayer, setActivePlayer] = useState('X');
    
   function handleSelectSquare() {
     setActivePlayer((curActivePlayer) => curActivePlayer === 'X' ? 'O' : 'X'); 
+    setGameTurns()
   }
   
   return (
