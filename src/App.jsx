@@ -5,6 +5,10 @@ import Player from "./components/Player/Player"
 import GameBoard from "./components/GameBoard/GameBoard"
 import Log from './components/Log/Log'
 
+const WINNING_COMB = [
+  []
+]
+
 function deriveActivePlayer(gameTurns) {
   let currentPlayer = 'X';
 
